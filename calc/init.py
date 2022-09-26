@@ -8,9 +8,9 @@ def init_data(exp):
     global x
     global y
     global operation
-    options_operstion = ['-', '+', '*', '/']
+    options_operation = ['-', '+', '*', '/']
     for letter in exp:
-        if letter in options_operstion:
+        if letter in options_operation:
             exp = exp.split(letter)
             exp.append(letter)
             break
@@ -24,4 +24,6 @@ def set_data():
     global y
     global operation
     return x, y, operation
+
+
 
